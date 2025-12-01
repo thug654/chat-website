@@ -2,33 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chat System</title>
+    <title>Chat Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="login-box" id="loginBox">
+<div id="loginBox">
     <h2>Login</h2>
     <input type="text" id="username" placeholder="Enter username">
-    <input type="password" id="password" placeholder="Enter password (admin only)">
+    <input type="password" id="password" placeholder="Admin password">
     <button onclick="login()">Login</button>
 </div>
 
-<div class="chat-box hidden" id="chatBox">
+<div id="chatBox" class="hidden">
     <h2>Chat — <span id="roleTitle"></span></h2>
-
-    <div class="messages" id="messages"></div>
-
-    <div class="input-area">
-        <input type="text" id="msgInput" placeholder="Type message...">
-        <button onclick="sendMsg()">Send</button>
-    </div>
+    <div id="messages"></div>
+    <input type="text" id="msgInput" placeholder="Type message...">
+    <button onclick="sendMsg()">Send</button>
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<!-- Yaha script.js link karo -->
+<script type="module" src="script.js"></script>
 
-<script src="script.js"></script>
 </body>
 </html>
